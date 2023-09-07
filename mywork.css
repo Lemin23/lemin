@@ -1,0 +1,310 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bree Serif', serif;
+}
+
+#color { 
+    background-color: black;
+    overflow-x: hidden;
+}
+.container {
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    z-index: 100px;
+    
+    
+}
+@media (max-width: 594px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.navbar a {
+    position:relative;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 30px;
+    color: white;
+    
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color:#525FE1;
+    transition: .3s;
+    
+}
+
+.navbar a:hover::before {
+    width: 100%;
+    
+}
+
+.first {
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+}
+
+.story {
+    margin:180px 50px;
+    grid-area: 1/1/2/2;
+}
+
+.sourti {
+    margin-top: 100px;
+    margin-left: 65px; 
+    margin-right: 65px;
+}
+
+.me {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.my-name{
+    color: #F86F03;
+    word-spacing: .095rem;
+    font-size: 1rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.diploma {
+    color: #FFE6C7;
+    word-spacing: .095rem;
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+
+.my-job {
+    color: white;
+}
+.text {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 35px;
+
+}
+
+
+
+.random {
+    display: grid;
+    grid-template-columns: 630px 1fr;
+    grid-template-rows: 1fr ;
+
+
+}
+
+.lorem {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-transform: none;
+    padding-top:30px ;
+    font-weight: 400;
+    line-height: 1.5;
+    word-spacing: 0.3mm;
+    color:#FFE6C7;
+    
+}
+
+
+
+.random-pic {
+    width: 600px;
+    margin-top: 8px;
+    border-radius:12px;
+    margin-left: 25px ;
+}
+
+
+
+@media (max-width: 1249px){
+    .random {
+        display: grid;
+        grid-template-columns: 530px 1fr;
+        grid-template-rows: 1fr ;
+    
+    
+    }
+
+    .lorem {
+        padding-top: 5px;
+    }
+    .random-pic{
+        width: 500px;
+        margin-top:8px ;
+        margin-left: 10px;
+    }
+}
+@media (max-width: 843px) {
+    .first {
+       display: grid;
+       
+        
+    }
+    .story {
+        margin-right: 0;
+        margin: 180px 25px;
+    }
+    .my-name {
+        margin-right: 0;
+        font-size: 0.8rem;
+    }
+
+    .diploma {
+        margin-right: 0;
+        font-size: 0.999rem;
+        
+    }
+     
+    .my-job {
+        font-size:1.7rem;
+    }
+
+    .sourti {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .random {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .random-pic {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 594px){
+    .first {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sourti {
+        margin-top: 70px;
+
+    }
+    .story {
+        margin-top: 30px;
+        margin-bottom:50px ;
+        text-align: center;
+    }
+
+    
+
+    .lorem {
+        margin: 10px;
+    }
+    
+
+    
+}
+
+@media (max-width: 502px) {
+    .random-pic {
+        width:99% ;
+    }
+}
+.my-skills {
+    margin-top: 70px;
+}
+
+
+
+.Tech {
+    width: 90vw;
+    max-width: 950px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 20px;
+    
+}
+li {
+    
+    list-style: none;
+    color: white;
+    background-color:#F86F03;;
+    font-size: x-large;
+    padding:1em;
+    border-radius: 20px;
+    margin:0;
+    transition:all 0.3s;
+}
+
+li:hover {
+    transform:translateY(-5px);
+    background-color: #525FE1;
+    
+}
+
+
+
+.tools > li {
+    list-style: none;
+
+}
+
+
+
+
+
+
+
+
+/* .lemooo {
+
+    --clr-kenub:red;
+    --clr-yes: blue;
+    --clr-light:white;
+    list-style: none;
+    font-size: larger;
+    padding: 0.5em ;
+    margin: 30px;
+    color: var(--clr-kenub);
+    background-color: var(--clr-yes);
+    border: solid black 10px;
+    border-radius: 10px;
+    transition: all 0.8s;
+}
+
+.lemooo:hover {
+    transform: translateY(-10px);
+    color: var(--clr-yes);
+    background-color: var(--clr-kenub);
+    border:solid 10px var(--clr-light) ;
+}
+
+
